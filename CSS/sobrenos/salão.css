@@ -1,47 +1,103 @@
-/* SALÃO.CSS */
-
-.prod0 h1 {
-    font-size: 2em; /* Ajuste conforme necessário */
+.prod0 h1{
     color: #bb6363;
-    text-align: center;
+    font-size: 50px;
+    margin-left: 80px;
+    margin: 20px;
     font-family: "Montserrat";
-    margin-bottom: 20px; /* Adiciona margem inferior */
+   
 }
 
-.prod0 img {
-    width: 100%;
-    height: auto;
-    margin: 20px auto; /* Centraliza e adiciona margem */
-    display: block; /* Garante que a imagem seja exibida como bloco */
+
+.prod0 img{
+    width: 570px;
+    height: 300px;
+    margin: 20px;
+    
 }
 
-.tcc0, .tcc {
+
+div h2{
+    padding: 5px;
+    font-family: "Montserrat";
+    margin-left: 20px;
+}
+.prod{
+    width: 1200px;
+    margin: auto;
+
+}
+
+.prod div{
+    align-items: center;
+    text-align: center;
+}
+
+.tcc0{
     display: flex;
-    flex-wrap: wrap; /* Quebra em várias linhas em dispositivos menores */
-    justify-content: center; /* Centraliza os elementos */
-}
-
-.Video {
     width: 100%;
-    max-width: 500px; /* Limita a largura do vídeo */
-    margin: 20px auto; /* Centraliza e adiciona margem */
+}
+.prod0{
+    width: 1200px;
 }
 
-.font2, .font3 {
-    font-size: 2em; /* Ajuste conforme necessário */
+.tcc{
+    display: flex;
+    width: 100%;
+}
+
+.Video{
+    width: fit-content;
+    margin: auto;
+}
+
+.font2 {
+    font-size: 80px !important;
+    text-align: center !important;
+    color: #BB6363 !important;
+    margin-top: 100px !important;
+    margin-left: -113.28px !important;
+    left: 50% !important;
+    font-family: "Montserrat" !important;
+    position: absolute !important;
+}
+
+.font3{
+    margin: auto;
     text-align: center;
-    font-family: "Montserrat";
-    color: #BB6363;
-    margin-bottom: 20px; /* Adiciona margem inferior */
+    font-size: 226px !important;
+    font-family: "Quentin" !important;
+    color: #f5b6b975 !important;
 }
 
-@media (min-width: 760px) {
-    .tcc0, .tcc {
-        flex-wrap: nowrap; /* Volta ao layout em linha */
+@media(max-width: 760px){
+    .tcc, .tcc0{
+        width: 80%;
+        flex-direction: column;
     }
 
-    .prod0 img {
-        width: 50%; /* Reduz o tamanho da imagem */
-        margin: 20px; /* Adiciona margem ao redor da imagem */
+    .prod0{
+        width: 100%;
+        text-align: center;
+    }
+    .prod{
+        width: 80%;
+        margin: auto;
+
+    }
+    .prod div{
+        width: 100%;
+        align-items: center;
+    }
+    .prod0 img{
+        margin: 5px;
+    }
+    .tcc img, .tcc0 img{
+        width: 100%;
+    }
+    .tcc div, .tcc0 div{
+        margin: auto;
+    }
+    .Video{
+        display: none;
     }
 }
