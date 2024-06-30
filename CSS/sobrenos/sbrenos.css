@@ -1,113 +1,85 @@
-.histudo{
-    padding-top: 120px; 
-    width: 1200px;
+/* SBRENOS.CSS */
+
+.histudo {
+    padding-top: 120px;
+    width: 100%; /* Utiliza toda a largura disponível */
+    max-width: 1200px; /* Limita a largura máxima para conteúdo mais legível */
+    margin: auto; /* Centraliza na tela */
 }
 
-.font1{
-    font-size: 226px;
+.font1 {
+    font-size: 5em; /* Ajuste conforme necessário */
     text-align: center;
     color: #f5b6b975;
     font-family: "Quentin";
+    margin-bottom: 20px; /* Adiciona margem inferior */
 }
 
-.font{
-    font-size: 80px;
+.font {
+    font-size: 2em; /* Ajuste conforme necessário */
     margin-bottom: 20px;
     padding: 5px;
-    text-align: center ;
+    text-align: center;
     color: #BB6363;
-    margin-left: -217.5px;
-    left: 50%;
-    top: 210px;
     font-family: "Montserrat";
-    position: absolute;
+    position: relative;
 }
 
-.fase{
-    font-size: 50px;
+.fase {
+    font-size: 1.5em; /* Ajuste conforme necessário */
     color: #BB6363;
     font-family: "Montserrat";
 }
 
-.texto1{
-    font-size: larger;
+.texto1, .texto2 {
+    font-size: 1em; /* Ajuste conforme necessário */
     padding: 20px;
     text-align: justify;
     font-family: "Montserrat";
 }
 
-.texto2{
-    font-size: larger;
-    padding: 20px;
-    text-align: justify;
-    font-family: "Montserrat";  
-}
-.imgSbrDiv, .imgSbr{
-    width: 500px;
-    height: 600px;
-    border-radius: 20px;
-}
-
-.historia{
-    display: flex;
-}
-
-.elas img{
-    width: 570px;
-    height: 500px;
-    margin: 20px;
-    
-}
-
-div h2{
-    padding: 5px;
-    font-family: "Montserrat";
-    margin-left: 20px;
-}
-.elas{
-    width: 1200px;
-    display: flex;
-
-}
-
-.elas1 img{
-    width: 570px;
-    height: 500px;
-    margin: 20px;
-}
-
-.elas1{
-    display: flex;
+.imgSbrDiv, .imgSbr {
     width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px; /* Adiciona margem inferior */
 }
 
+.historia {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos em dispositivos menores */
+}
 
-@media(max-width: 760px){
-    .histudo{
-        width: 100%;
+.elas img {
+    width: 100%;
+    height: auto;
+    margin: 20px auto; /* Centraliza e adiciona margem */
+}
 
+.elas1 img {
+    width: 100%;
+    height: auto;
+    margin: 20px auto; /* Centraliza e adiciona margem */
+}
+
+@media (min-width: 760px) {
+    .histudo {
+        width: 80%; /* Reduz a largura para telas maiores */
     }
-    .historia{
-        flex-direction: column-reverse;
+
+    .historia {
+        flex-direction: row; /* Volta para layout em linha */
     }
-    .imgSbrDiv{
-        margin: auto;
-        width: 80%;
+
+    .imgSbrDiv, .imgSbr {
+        width: 50%; /* Reduz o tamanho das imagens */
+        margin: 0 20px; /* Adiciona margem lateral */
     }
-    .imgSbr{
-        width: 100%;
-        height: 500px;
-        margin: auto;
-    }
-    .fase{
-        text-align: center;
-    }
-    .font1{
-        display: none;
-    }
-    .font{
-        position: inherit;
-        text-align: center;
-        margin: auto;
+
+    .font {
+        position: absolute; /* Mantém a posição absoluta */
+        left: 50%;
+        transform: translateX(-50%);
+        top: 210px; /* Ajuste conforme necessário */
     }
 }

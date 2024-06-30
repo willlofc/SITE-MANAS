@@ -1,3 +1,5 @@
+/* CABEÇALHO.CSS */
+
 .cabeçalho {
     display: flex;
     align-items: center;
@@ -8,33 +10,36 @@
     width: 100%;
     max-width: 1200px;
     z-index: 12;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Adicionei flex-wrap para lidar com quebras de linha */
 }
 
 .Titulo {
     display: flex;
     color: #bb6363;
-    font-family: 'Brownsugar';
+    font-family: 'BrownSugar';
     align-items: center;
 }
 
 .Titulo h3 {
     margin: 0;
-    font-size: 34px;
+    font-size: 2em; /* Ajuste conforme necessário */
 }
 
 .Titulo img {
-    max-width: 120px;
+    max-width: 80px; /* Ajuste conforme necessário */
     height: auto;
     margin-right: 10px;
 }
 
 ul {
     font-family: "Montserrat";
+    list-style: none; /* Removi marcadores de lista */
 }
 
 #nav {
     margin-left: auto;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o menu */
 }
 
 #menu {
@@ -82,12 +87,34 @@ ul {
 @media(max-width: 760px) {
     .cabeçalho {
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-between; /* Garante espaçamento uniforme */
     }
+
     #nav {
-        width: 0px;
+        width: 100%; /* Ocupa toda a largura */
+        justify-content: center; /* Centraliza o menu */
     }
+
+    #menu {
+        display: none; /* Oculta o menu na versão mobile */
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        text-align: center; /* Centraliza itens */
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    #menu.active {
+        display: flex; /* Mostra o menu quando ativo */
+        flex-direction: column;
+    }
+
     #btn-mobile {
+        display: block;
         font-family: 'Montserrat';
         margin: 5px;
         display: flex;
@@ -100,64 +127,7 @@ ul {
         cursor: pointer;
         margin: 32px;
     }
-    #menu {
-        display: block;
-        position: absolute;
-        width: 50%;
-        top: 100px;
-        height: 0px;
-        transition: .6s;
-        visibility: hidden;
-        margin: 0;
-        padding: 30px;
-        background-color: white;
-        overflow-y: hidden;
-    }
-    #nav.active #menu {
-        visibility: visible;
-        height: 25vh;
-        display: table-column;
-        justify-content: space-between;
-        right: 0px;
-        background-color: white;
-    }
-    #hamburguer {
-        display: block;
-        border-top: 2px solid black;
-        width: 20px;
-    }
-    #hamburguer::after, #hamburguer::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background-color: currentColor;
-        margin-top: 5px;
-    }
-    .Titulo {
-        flex: 1 0 100%;
-        text-align: center;
-    }
-    #nav {
-        flex: 1 0 100%;
-        text-align: center;
-        margin: 0;
-    }
 }
 
-@media(max-width: 550px) {
-    .Titulo h3 {
-        font-size: 25px;
-        margin: 1rem 2rem;
-    }
-    #btn-mobile {
-        margin: 2rem 1rem;
-    }
-    .cabeçalho img {
-        max-width: 100px;
-        height: 80px;
-        margin: 1rem;
-    }
-}
 
 
