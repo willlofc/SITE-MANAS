@@ -53,15 +53,11 @@ function caixa01(){
 
     localStorage.setItem('nome', grande.nome.innerHTML)
     grande.nome.innerHTML = caixa1.querySelector('.um').innerHTML;
-    caixa1.querySelector('.nome').innerHTML = localStorage.getItem('nome');
-
-    localStorage.setItem('preço', grande.preco.innerHTML)
-    grande.preco.innerHTML = caixa1.querySelector('.preço').innerHTML;
-    caixa1.querySelector('.preço').innerHTML = localStorage.getItem('preço')
+    caixa1.querySelector('.um').innerHTML = localStorage.getItem('nome');
 
     localStorage.setItem('descricao', grande.descricao.innerHTML)
-    grande.descricao.innerHTML = caixa1.querySelector('.descricao').innerHTML;
-    caixa1.querySelector('.descricao').innerHTML = localStorage.getItem('descricao');
+    grande.descricao.innerHTML = caixa1.querySelector('.dois').innerHTML;
+    caixa1.querySelector('.dois').innerHTML = localStorage.getItem('descricao');
 
     localStorage.setItem('imagemgrande', imagens.imagemGrande.src)
     imagens.imagemGrande.src = imagens.imagem1.src
@@ -72,16 +68,12 @@ function caixa01(){
 
 function caixa02(){
     localStorage.setItem('nome', grande.nome.innerHTML)
-    grande.nome.innerHTML = caixa2.querySelector('.nome').innerHTML;
-    caixa2.querySelector('.nome').innerHTML = localStorage.getItem('nome');
-
-    localStorage.setItem('preço', grande.preco.innerHTML)
-    grande.preco.innerHTML = caixa2.querySelector('.preço').innerHTML;
-    caixa2.querySelector('.preço').innerHTML = localStorage.getItem('preço')
+    grande.nome.innerHTML = caixa2.querySelector('.um').innerHTML;
+    caixa2.querySelector('.um').innerHTML = localStorage.getItem('nome');
 
     localStorage.setItem('descricao', grande.descricao.innerHTML)
-    grande.descricao.innerHTML = caixa2.querySelector('.descricao').innerHTML;
-    caixa2.querySelector('.descricao').innerHTML = localStorage.getItem('descricao')
+    grande.descricao.innerHTML = caixa2.querySelector('.dois').innerHTML;
+    caixa2.querySelector('.dois').innerHTML = localStorage.getItem('descricao')
     
     localStorage.setItem('imagemgrande', imagens.imagemGrande.src)
     imagens.imagemGrande.src = imagens.imagem2.src
@@ -92,16 +84,12 @@ function caixa02(){
 
 function caixa03(){
     localStorage.setItem('nome', grande.nome.innerHTML)
-    grande.nome.innerHTML = caixa3.querySelector('.nome').innerHTML;
-    caixa3.querySelector('.nome').innerHTML = localStorage.getItem('nome');
-
-    localStorage.setItem('preço', grande.preco.innerHTML)
-    grande.preco.innerHTML = caixa3.querySelector('.preço').innerHTML;
-    caixa3.querySelector('.preço').innerHTML = localStorage.getItem('preço')
+    grande.nome.innerHTML = caixa3.querySelector('.um').innerHTML;
+    caixa3.querySelector('.um').innerHTML = localStorage.getItem('nome');
 
     localStorage.setItem('descricao', grande.descricao.innerHTML)
-    grande.descricao.innerHTML = caixa3.querySelector('.descricao').innerHTML;
-    caixa3.querySelector('.descricao').innerHTML = localStorage.getItem('descricao')
+    grande.descricao.innerHTML = caixa3.querySelector('.dois').innerHTML;
+    caixa3.querySelector('.dois').innerHTML = localStorage.getItem('descricao')
 
     localStorage.setItem('imagemgrande', imagens.imagemGrande.src)
     imagens.imagemGrande.src = imagens.imagem3.src
@@ -113,16 +101,12 @@ function caixa03(){
 function caixa04(){
 
     localStorage.setItem('nome', grande.nome.innerHTML)
-    grande.nome.innerHTML = caixa4.querySelector('.nome').innerHTML;
-    caixa4.querySelector('.nome').innerHTML = localStorage.getItem('nome');
-
-    localStorage.setItem('preço', grande.preco.innerHTML)
-    grande.preco.innerHTML = caixa4.querySelector('.preço').innerHTML;
-    caixa4.querySelector('.preço').innerHTML = localStorage.getItem('preço')
+    grande.nome.innerHTML = caixa4.querySelector('.um').innerHTML;
+    caixa4.querySelector('.um').innerHTML = localStorage.getItem('nome');
 
     localStorage.setItem('descricao', grande.descricao.innerHTML)
-    grande.descricao.innerHTML = caixa4.querySelector('.descricao').innerHTML;
-    caixa4.querySelector('.descricao').innerHTML = localStorage.getItem('descricao') 
+    grande.descricao.innerHTML = caixa4.querySelector('.dois').innerHTML;
+    caixa4.querySelector('.dois').innerHTML = localStorage.getItem('descricao') 
 
     localStorage.setItem('imagemgrande', imagens.imagemGrande.src)
     imagens.imagemGrande.src = imagens.imagem4.src
