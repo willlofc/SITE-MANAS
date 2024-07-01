@@ -52,7 +52,7 @@ caixa4.addEventListener('click',caixa04)
 function caixa01(){
 
     localStorage.setItem('nome', grande.nome.innerHTML)
-    grande.nome.innerHTML = caixa1.querySelector('.nome').innerHTML;
+    grande.nome.innerHTML = caixa1.querySelector('.um').innerHTML;
     caixa1.querySelector('.nome').innerHTML = localStorage.getItem('nome');
 
     localStorage.setItem('preço', grande.preco.innerHTML)
